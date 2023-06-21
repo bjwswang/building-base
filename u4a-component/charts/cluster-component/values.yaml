@@ -6,8 +6,7 @@
 ingress-nginx:
   enabled: true
   # MUST update this value
-  deployedHost: &deployedHost
-    <replaced-ingress-node-name>
+  deployedHost: &deployedHost kubebb-core-worker
   controller:
     ingressClassResource:
       name: portal-ingress
@@ -81,7 +80,7 @@ metallb:
   enabled: false
   # Must configure the available addresses if metallb is enabled
   ipAddresses:
-  - 192.168.1.10-192.168.90.15
+    - 192.168.1.10-192.168.90.15
   controller:
     image:
       repository: hub.tenxcloud.com/u4a-component/controller
