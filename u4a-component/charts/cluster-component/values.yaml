@@ -6,7 +6,7 @@
 ingress-nginx:
   enabled: true
   # MUST update this value
-  deployedHost: &deployedHost kubebb-core-worker
+  deployedHost: &deployedHost kubebb-core-1node-control-plane
   controller:
     ingressClassResource:
       name: portal-ingress
